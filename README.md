@@ -1,5 +1,5 @@
 # Java_ElasTech
-Resolução de exercícios propostos durante as aulas do Bootcamp Elas Tech
+Resolução de exercícios propostos na atividade 3 durante as aulas do Bootcamp Elas Tech. 
 
 ## Lista de Exercícios
 
