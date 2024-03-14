@@ -23,7 +23,7 @@ Resolução de exercícios propostos na atividade 3 durante as aulas do Bootcamp
 
   Implemente um algoritmo que exiba os primeiros 20 números da sequência de Fibonacci.
 
-##Exercício 6
+## Exercício 6
 
   Faça um programa que solicite ao usuário números inteiros positivos. Quando o usuário digitar um número negativo, o programa deve exibir a média dos números inseridos até aquele momento.
 
