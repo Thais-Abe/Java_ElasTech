@@ -9,11 +9,7 @@ public class Main {
         Scanner scam = new Scanner(System.in);
         List<String> shoppingList = new ArrayList<>();
 
-        System.out.println("Vamos as compras!");
-        System.out.println("Digite a opção desejada abaixo: ");
-        System.out.println("1-Adicionar as compras na lista");
-        System.out.println("2-Sair");
-        System.out.println("A opção foi: ");
+        optionsMenu();
         int option = scam.nextInt();
 
         while (option == 1) {
@@ -29,11 +25,7 @@ public class Main {
                         System.out.println(itemAdd);
                     }
                     System.out.println("--------------------------------------");
-                    System.out.println("Deseja adicionar mais itens na lista?");
-                    System.out.println("Digite a opção desejada abaixo: ");
-                    System.out.println("1-Adicionar as compras na lista");
-                    System.out.println("2-Sair");
-                    System.out.println("A opção foi: ");
+                    optionsMenu();
                     option = scam.nextInt();
                     break;
                 case 2:
@@ -45,5 +37,13 @@ public class Main {
         }
         scam.close();
 
+    }
+
+    public static void optionsMenu(){
+        System.out.println("Vamos as compras!");
+        System.out.println("Digite a opção desejada abaixo: ");
+        System.out.println("1-Adicionar as compras na lista");
+        System.out.println("2-Sair");
+        System.out.println("A opção foi: ");
     }
 }
