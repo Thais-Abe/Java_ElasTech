@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -13,7 +12,7 @@ public class Main {
         List<Double> listOfPositiveNumbers = new ArrayList<>();
         System.out.println("Por favor, digite um número: ");
 
-        Boolean isPositive = true;
+        boolean isPositive = true;
         while (isPositive) {
             number = scam.nextDouble();
             if (number < 0) {
