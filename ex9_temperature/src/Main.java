@@ -4,30 +4,28 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scam = new Scanner(System.in);
-        optionsFromMenu();
-
-        int option = scam.nextInt();
 
         boolean notFinishProcess = true;
 
         while (notFinishProcess) {
+            optionsFromMenu();
+            int option = scam.nextInt();
+
             switch (option) {
                 case 1:
+                    scam.nextLine();
                     System.out.println("Digite a temperatura a ser convertida para Fahrenheit");
                     double celsius = scam.nextDouble();
-                    System.out.println(celsius + "para Fahrenheit: " + convertCelsiusToFahrenheit(celsius));
-                    optionsFromMenu();
-                    option = scam.nextInt();
+                    System.out.println(celsius + " ºC para Fahrenheit: " + convertCelsiusToFahrenheit(celsius) + "ºF");
                     break;
                 case 2:
                     System.out.println("Digite a temperatura a ser convertida para Celsius");
                     double fahrenheit = scam.nextDouble();
                     System.out.println(fahrenheit + "para Celsius: " + convertFahrenheitToCelsius(fahrenheit));
-                    optionsFromMenu();
-                    option = scam.nextInt();
                     break;
                 case 3:
                     System.out.println("Sair");
+                    System.out.println("Até a próxima!");
                     notFinishProcess = false;
                     break;
                 default:
@@ -48,6 +46,7 @@ public class Main {
     }
 
     public static void optionsFromMenu() {
+        System.out.println("---------------------------------------------------------");
         System.out.println("Digite o número da opção desejada: ");
         System.out.println("1 - Converter a temperatura de Celsius para Fahrenheit");
         System.out.println("2 - Converter a temperatura de Fahrenheit para Celsius");
