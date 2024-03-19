@@ -8,13 +8,14 @@ public class Main {
 
         Scanner scam = new Scanner(System.in);
         List<String> shoppingList = new ArrayList<>();
+        boolean stopAddShoppingList = false;
 
-        optionsMenu();
-        int option = scam.nextInt();
-
-        while (option == 1) {
+        while (!stopShoppingList) {
+            optionsMenu();
+            int option = scam.nextInt();
             switch (option) {
                 case 1:
+                    scam.nextLine();
                     System.out.println("Digite o item a ser adicionado na lista:");
                     String item = scam.next();
                     shoppingList.add(item);
@@ -25,11 +26,10 @@ public class Main {
                         System.out.println(itemAdd);
                     }
                     System.out.println("--------------------------------------");
-                    optionsMenu();
-                    option = scam.nextInt();
                     break;
                 case 2:
                     System.out.println("A lista de compras esta completa! Até a próxima compra!");
+                    stopAddShoppingList = true;
                     break;
                 default:
                     System.out.println("Digite uma opção válida");
